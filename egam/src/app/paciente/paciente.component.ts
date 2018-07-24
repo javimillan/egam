@@ -32,6 +32,8 @@ export class PacienteComponent implements OnInit {
               public dialog: MatDialog,
               public dataService: DataService,
             public spinner: SpinnerComponent) {
+
+            
               }
 
   @ViewChild(MatPaginator) paginator: MatPaginator;

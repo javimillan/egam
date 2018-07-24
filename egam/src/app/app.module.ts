@@ -28,6 +28,8 @@ import {EditDialogComponent} from './dialogs/edit/edit.dialog.component';
 import {DeleteDialogComponent} from './dialogs/delete/delete.dialog.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +60,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     DemoMaterialModule,
     FlexLayoutModule,
     SharedModule,
-    RouterModule.forRoot(AppRoutes)
+    RouterModule.forRoot(AppRoutes),
   ],
   entryComponents: [
     AddDialogComponent,
@@ -71,7 +73,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
   {
     provide: LocationStrategy,
     useClass: HashLocationStrategy
-  }
+  },
   ],
   bootstrap: [AppComponent]
 })
