@@ -58,8 +58,6 @@ export class PacienteComponent implements OnInit {
         // For add we're just pushing a new row inside DataService
         this.exampleDatabase.dataChange.value.push(this.dataService.getDialogData());
         this.refreshTable();
-      }else{
-        alert("resultado no es 1");
       }
     });
 
