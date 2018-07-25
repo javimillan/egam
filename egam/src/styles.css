@@ -8,7 +8,7 @@
 /* stylelint-disable material/no-prefixes */
 /* stylelint-enable */
 /* Modal pacientes */
-.cdk-overlay-pane{width: 90%}
+/* .cdk-overlay-pane{width: 90%} */
 .mat-dialog-content{margin: 0!important;}
 ::-webkit-scrollbar {
     width: 10px;

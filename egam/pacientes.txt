@@ -74,3 +74,24 @@ for (var i = 1; i <= 5; i++) {
  IdUsuarioAlta : 2341
      });
 };
+
+for (var i = 1; i <= 5; i++) {
+   db.pacientesAdjunto.insert({
+       IdPacienteAdjunto: 2345236,
+      IdPaciente: 4353245,
+      FechaAdjunto : "",
+      Comentario: "",
+      CarpetaDocumento: "",
+      FechaAlta : "",
+      IdUsuarioAlta: 2341
+      });
+ };
+
+ for (var i = 1; i <= 5; i++) {
+    db.pacientesAviso.insert({
+      IdPacienteAviso: 76533,
+       IdPaciente: 4353245,
+       IdAviso: 56553,
+       IdTipoAvisoPaciente: 90
+       });
+  };
