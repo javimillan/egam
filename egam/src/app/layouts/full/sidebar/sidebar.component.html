@@ -29,8 +29,20 @@
             <span fxFlex></span>
             <span class="label label-{{ badge.type }}" *ngFor="let badge of menuitem.badge">{{ badge.value }}</span>
         </a>
-
+        <a  class="" appAccordionToggle [routerLink]="['/', menuitem.state]" *ngIf="menuitem.type === 'subm'">
+            <mat-icon>{{ menuitem.icon }}</mat-icon>
+            <span>{{ menuitem.name }}</span>
+            <span fxFlex></span>
+            <span class="label label-{{ badge.type }}" *ngFor="let badge of menuitem.badge">{{ badge.value }}</span>
+            <i class="material-icons">expand_more</i>
+        </a>
+        <!-- <md-menu #subMenu="mdMenu">
+            <button md-menu-item>General</button>
+            <button md-menu-item>Display</button>
+            <button md-menu-item>Profile˚</button>
+        </md-menu> -->
 
     </mat-list-item>
+
 
 </mat-nav-list>
