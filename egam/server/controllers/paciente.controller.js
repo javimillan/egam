@@ -10,12 +10,12 @@ pacienteCtrl.getPacientes = async (req, res, next) => {
 pacienteCtrl.createPaciente = async (req, res, next) => {
     console.log("CREATE PACIENTE");
     const paciente = new Paciente({
-        id: req.body.id,
-        title: req.body.title,
-        state: req.body.state,
-        url: req.body.url,
-        created_at: req.body.created_at,
-        updated_at: req.body.updated_at
+        IdPaciente: req.body.IdPaciente,
+        Nombre: req.body.Nombre,
+        Apellido1: req.body.Apellido1,
+        Apellido2: req.body.Apellido2,
+        IdSiglaDireccion: req.body.IdSiglaDireccion,
+        Direccion: req.body.Direccion
 
     });
     // console.log(req);

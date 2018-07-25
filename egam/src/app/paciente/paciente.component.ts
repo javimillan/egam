@@ -22,7 +22,7 @@ import {SpinnerComponent} from '../shared/spinner.component';
   styleUrls: ['./paciente.component.css']
 })
 export class PacienteComponent implements OnInit {
-  displayedColumns = ['id', 'title', 'state', 'url', 'created_at', 'updated_at', 'actions'];
+  displayedColumns = ['IdPaciente', 'Nombre', 'Apellido1', 'Apellido2', 'IdSiglaDireccion', 'Direccion', 'actions'];
   exampleDatabase: DataService | null;
   dataSource: ExampleDataSource | null;
   index: number;
@@ -33,7 +33,7 @@ export class PacienteComponent implements OnInit {
               public dataService: DataService,
             public spinner: SpinnerComponent) {
 
-            
+
               }
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -71,19 +71,19 @@ export class PacienteComponent implements OnInit {
     //   });
   }
 
-  startEdit(i: number, id: number, title: string, state: string, url: string, created_at: string, updated_at: string) {
-    this.id = id;
+  startEdit(i: number, IdPaciente: number, Nombre: string, Apellido1: string, Apellido2: string, IdSiglaDireccion: number, Direccion: string) {
+    this.id = IdPaciente;
     // index row is used just for debugging proposes and can be removed
     this.index = i;
     console.log(this.index);
     const dialogRef = this.dialog.open(EditDialogComponent, {
-      data: {id: id, title: title, state: state, url: url, created_at: created_at, updated_at: updated_at}
+      data: {IdPaciente: IdPaciente, Nombre: Nombre, Apellido1: Apellido1, Apellido2: Apellido2, IdSiglaDireccion: IdSiglaDireccion, Direccion: Direccion}
     });
 
     dialogRef.afterClosed().subscribe(result => {
       if (result === 1) {
         // When using an edit things are little different, firstly we find record inside DataService by id
-        const foundIndex = this.exampleDatabase.dataChange.value.findIndex(x => x.id === this.id);
+        const foundIndex = this.exampleDatabase.dataChange.value.findIndex(x => x.IdPaciente === this.id);
         // Then you update that record using data from dialogData (values you enetered)
         this.exampleDatabase.dataChange.value[foundIndex] = this.dataService.getDialogData();
         // And lastly refresh table
@@ -102,7 +102,7 @@ export class PacienteComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       if (result === 1) {
         console.log("elininar registro!");
-        const foundIndex = this.exampleDatabase.dataChange.value.findIndex(x => x.id === this.id);
+        const foundIndex = this.exampleDatabase.dataChange.value.findIndex(x => x.IdPaciente === this.id);
         // for delete we use splice in order to remove single object from DataService
         this.exampleDatabase.dataChange.value.splice(foundIndex, 1);
         this.refreshTable();
@@ -183,8 +183,9 @@ export class ExampleDataSource extends DataSource<Issue> {
     return Observable.merge(...displayDataChanges).map(() => {
       // Filter data
       this.filteredData = this._exampleDatabase.data.slice().filter((issue: Issue) => {
+      console.log("ISSUE " + issue.Nombre);
       //montamos las filas con los campos deseados
-        const searchStr = (issue.id + issue.title + issue.url + issue.created_at).toLowerCase();
+        const searchStr = (issue.IdPaciente + issue.Nombre + issue.Apellido1 + issue.Apellido2 + issue.Direccion).toLowerCase();
         console.log("EXAMPLE " + searchStr);
         //imprimimos filas
         return searchStr.indexOf(this.filter.toLowerCase()) !== -1;
@@ -215,12 +216,12 @@ export class ExampleDataSource extends DataSource<Issue> {
       let propertyB: number | string = '';
 
       switch (this._sort.active) {
-        case 'id': [propertyA, propertyB] = [a.id, b.id]; break;
-        case 'title': [propertyA, propertyB] = [a.title, b.title]; break;
-        case 'state': [propertyA, propertyB] = [a.state, b.state]; break;
-        case 'url': [propertyA, propertyB] = [a.url, b.url]; break;
-        case 'created_at': [propertyA, propertyB] = [a.created_at, b.created_at]; break;
-        case 'updated_at': [propertyA, propertyB] = [a.updated_at, b.updated_at]; break;
+        case 'IdPaciente': [propertyA, propertyB] = [a.IdPaciente, b.IdPaciente]; break;
+        case 'Nombre': [propertyA, propertyB] = [a.Nombre, b.Nombre]; break;
+        case 'Apellido1': [propertyA, propertyB] = [a.Apellido1, b.Apellido1]; break;
+        case 'Apellido2': [propertyA, propertyB] = [a.Apellido2, b.Apellido2]; break;
+        case 'IdSiglaDireccion': [propertyA, propertyB] = [a.IdSiglaDireccion, b.IdSiglaDireccion]; break;
+        case 'Direccion': [propertyA, propertyB] = [a.Direccion, b.Direccion]; break;
       }
 
       const valueA = isNaN(+propertyA) ? propertyA : +propertyA;

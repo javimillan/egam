@@ -39,11 +39,11 @@ export class DataService {
     this.httpClient.post(this.API_URL, issue).subscribe(data => {
       this.dialogData = issue;
       // this.toasterService.showToaster('Successfully added', 3000);
-      alert("añadido correctamente");
+      // alert("añadido correctamente");
       },
       (err: HttpErrorResponse) => {
       // this.toasterService.showToaster('Error occurred. Details: ' + err.name + ' ' + err.message, 8000);
-      alert("error al añadir");
+      console.log("No se ha añadido paciente");
     });;
   }
 

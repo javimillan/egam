@@ -1,8 +1,8 @@
 export class Issue {
-  id: number;
-  title: string;
-  state: string;
-  url: string;
-  created_at: string;
-  updated_at: string;
+  IdPaciente: number;
+  Nombre: string;
+  Apellido1: string;
+  Apellido2: string;
+  IdSiglaDireccion: number;
+  Direccion: string;
 }

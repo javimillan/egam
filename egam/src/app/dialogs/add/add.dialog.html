@@ -29,7 +29,7 @@
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
-        <div class="form">
+        <!-- <div class="form">
           <mat-form-field   >
             <input matInput #input type="number" class="form-control" placeholder="IdArea" [(ngModel)]="data.IdArea" name="IdArea" required   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
@@ -48,7 +48,7 @@
             <input matInput #input type="number" class="form-control" placeholder="IdUsuarioAlta" [(ngModel)]="data.IdUsuarioAlta" name="IdUsuarioAlta" required   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
-        </div>
+        </div> -->
         <!-- No obligatorios -->
 
     <mat-accordion class="example-headers-align">
@@ -62,469 +62,392 @@
         </mat-panel-description>
       </mat-expansion-panel-header>
 
-      <mat-form-field>
-        <input matInput placeholder="Date" [matDatepicker]="picker" (focus)="picker.open()" readonly>
-      </mat-form-field>
-
-
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdSiglaDireccion" [(ngModel)]="data.IdSiglaDireccion" name="IdSiglaDireccion"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Direccion" [(ngModel)]="data.Direccion" name="Direccion"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Numero" [(ngModel)]="data.Numero" name="Numero"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Piso" [(ngModel)]="data.Piso" name="Piso"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Puerta" [(ngModel)]="data.Puerta" name="Puerta"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="ExtraDireccion" [(ngModel)]="data.ExtraDireccion" name="ExtraDireccion"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdPais" [(ngModel)]="data.IdPais" name="IdPais"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdProvincia" [(ngModel)]="data.IdProvincia" name="IdProvincia"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdPoblacion" [(ngModel)]="data.IdPoblacion" name="IdPoblacion"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdCodigoPostal" [(ngModel)]="data.IdCodigoPostal" name="IdCodigoPostal"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="Latitud" [(ngModel)]="data.Latitud" name="Latitud"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="Longitud" [(ngModel)]="data.Longitud" name="Longitud"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdSiglaDireccionSecundaria" [(ngModel)]="data.IdSiglaDireccionSecundaria" name="IdSiglaDireccionSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="DireccionSecundaria" [(ngModel)]="data.DireccionSecundaria" name="DireccionSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="NumeroSecundaria" [(ngModel)]="data.NumeroSecundaria" name="NumeroSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="PisoSecundaria" [(ngModel)]="data.PisoSecundaria" name="PisoSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="PuertaSecundaria" [(ngModel)]="data.PuertaSecundaria" name="PuertaSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="ExtraDireccionSecundaria" [(ngModel)]="data.ExtraDireccionSecundaria" name="ExtraDireccionSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdPaisSecundaria" [(ngModel)]="data.IdPaisSecundaria" name="IdPaisSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdProvinciaSecundaria" [(ngModel)]="data.IdProvinciaSecundaria" name="IdProvinciaSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdPoblacionSecundaria" [(ngModel)]="data.IdPoblacionSecundaria" name="IdPoblacionSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdCodigoPostalSecundaria" [(ngModel)]="data.IdCodigoPostalSecundaria" name="IdCodigoPostalSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="LatitudSecundaria" [(ngModel)]="data.LatitudSecundaria" name="LatitudSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="LongitudSecundaria" [(ngModel)]="data.LongitudSecundaria" name="LongitudSecundaria"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Mobil1" [(ngModel)]="data.Mobil1" name="Mobil1"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Mobil2" [(ngModel)]="data.Mobil2" name="Mobil2"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Telefono1" [(ngModel)]="data.Telefono1" name="Telefono1"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Telefono2" [(ngModel)]="data.Telefono2" name="Telefono2"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Email" [(ngModel)]="data.Email" name="Email"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Web" [(ngModel)]="data.Web" name="Web"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="ResponsableNombre" [(ngModel)]="data.ResponsableNombre" name="ResponsableNombre"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="ResponsableTelefono" [(ngModel)]="data.ResponsableTelefono" name="ResponsableTelefono"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="ResponsableEmail" [(ngModel)]="data.ResponsableEmail" name="ResponsableEmail"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="ResponsableParentesco" [(ngModel)]="data.ResponsableParentesco" name="ResponsableParentesco"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdCliente" [(ngModel)]="data.IdCliente" name="IdCliente"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdUnidadProductiva" [(ngModel)]="data.IdUnidadProductiva" name="IdUnidadProductiva"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdUnidadProductivaEspecial" [(ngModel)]="data.IdUnidadProductivaEspecial" name="IdUnidadProductivaEspecial"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdCentroAsistencial" [(ngModel)]="data.IdCentroAsistencial" name="IdCentroAsistencial"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="IdZona" [(ngModel)]="data.IdZona" name="IdZona"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="DificultatAccesoDomicilio" [(ngModel)]="data.DificultatAccesoDomicilio" name="DificultatAccesoDomicilio"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="CodigoAvisoInterno" [(ngModel)]="data.CodigoAvisoInterno" name="CodigoAvisoInterno"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="Conflictivo" [(ngModel)]="data.Conflictivo" name="Conflictivo"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="MargenTiempoRecogida" [(ngModel)]="data.MargenTiempoRecogida" name="MargenTiempoRecogida"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="TiempoRecogida" [(ngModel)]="data.TiempoRecogida" name="TiempoRecogida"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input type="number" class="form-control" placeholder="TiempoDescarga" [(ngModel)]="data.TiempoDescarga" name="TiempoDescarga"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Referencia" [(ngModel)]="data.Referencia" name="Referencia"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
-            <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
-          </mat-form-field>
-        </div>
-        <div class="form">
-          <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+          <mat-form-field class="example-full-width">
+            <input matInput #input [matDatepicker]="FechaNacimiento" placeholder="Fecha Nacimiento">
+            <mat-datepicker-toggle matSuffix [for]="FechaNacimiento"></mat-datepicker-toggle>
+            <mat-datepicker touchUi #FechaNacimiento></mat-datepicker>
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Cip" [(ngModel)]="data.Cip" name="Cip"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="CipEstatal" [(ngModel)]="data.CipEstatal" name="CipEstatal"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Dni" [(ngModel)]="data.Dni" name="Dni"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Nass" [(ngModel)]="data.Nass" name="Nass"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Poliza" [(ngModel)]="data.Poliza" name="Poliza"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="NumeroParteSeguro" [(ngModel)]="data.NumeroParteSeguro" name="NumeroParteSeguro"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="CodigoExterno" [(ngModel)]="data.CodigoExterno" name="CodigoExterno"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <textarea matInput #input type="number" class="form-control" placeholder="ObservacionInterna" [(ngModel)]="data.ObservacionInterna" name="ObservacionInterna"   ></textarea>
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <textarea matInput #input type="number" class="form-control" placeholder="ObservacionServicio" [(ngModel)]="data.ObservacionServicio" name="ObservacionServicio"   ></textarea>
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Hombre" [(ngModel)]="data.Hombre" name="Hombre"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Exitus" [(ngModel)]="data.Exitus" name="Exitus"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="HayResponsable" [(ngModel)]="data.HayResponsable" name="HayResponsable"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="NombreResponsable" [(ngModel)]="data.NombreResponsable" name="NombreResponsable"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="TelefonoResponsable" [(ngModel)]="data.TelefonoResponsable" name="TelefonoResponsable"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="ParentescoResponsable" [(ngModel)]="data.ParentescoResponsable" name="ParentescoResponsable"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Abogado" [(ngModel)]="data.Abogado" name="Abogado"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
         <div class="form">
           <mat-form-field   >
-            <input matInput #input type="number" class="form-control" placeholder="Id" [(ngModel)]="data.id" name="id"   >
+            <input matInput #input class="form-control" placeholder="Tramitador" [(ngModel)]="data.Tramitador" name="Tramitador"   >
             <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
         </div>
-
-
         </mat-expansion-panel>
         </mat-accordion>
     <!--########################################################################################## -->

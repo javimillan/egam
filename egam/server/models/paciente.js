@@ -71,9 +71,9 @@ const pacienteSchema = new Schema({
   ParentescoResponsable : { type: String,  required: false},
   Abogado : { type: String,  required: false},
   Tramitador : { type: String,  required: false},
-  IdArea : { type: Number,  required: true},
-  FechaAlta : { type: String,  required: true},
-  IdUsuarioAlta : { type: Number,  required: true}
+  IdArea : { type: Number,  required: false},
+  FechaAlta : { type: String,  required: false},
+  IdUsuarioAlta : { type: Number,  required: false}
 });
 
 module.exports = mongoose.model('Paciente', pacienteSchema);
