@@ -37,7 +37,13 @@
     "rxjs": "^6.2.0",
     "rxjs-compat": "^6.2.0",
     "rxjs-tslint": "^0.1.4",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.2.2",
+    "mongodb": "^3.0.10",
+    "rootpath": "^0.1.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.6.8",

@@ -37,6 +37,10 @@ import { AlertService, AuthenticationService, UserService } from './_services';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
+
+import { fakeBackendProvider } from './_helpers';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -86,11 +90,12 @@ import { RegisterComponent } from './register';
     AlertService,
     AuthenticationService,
     UserService,
+    fakeBackendProvider,
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
   {
     provide: LocationStrategy,
-    useClass: HashLocationStrategy
+    useClass: HashLocationStrategy,
   },
   ],
   bootstrap: [AppComponent]

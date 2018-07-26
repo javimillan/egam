@@ -6,27 +6,27 @@ import { User } from '../_models';
 
 @Injectable()
 export class UserService {
-  private readonly API_URL = 'http://localhost:3000/api/';
+  private readonly API_URL = 'http://localhost:3000/api';
 
     constructor(private http: HttpClient) { }
 
     getAll() {
-        return this.http.get<User[]>(this.API_URL+`/users`);
+        return this.http.get<User[]>(`${environment.apiUrl}/users`);
     }
 
     getById(id: number) {
-        return this.http.get(this.API_URL+`/users/` + id);
+        return this.http.get(`${environment.apiUrl}/users/` + id);
     }
 
     register(user: User) {
-        return this.http.post(this.API_URL+`/users/register`, user);
+        return this.http.post(`${environment.apiUrl}/users/register`, user);
     }
 
     update(user: User) {
-        return this.http.put(this.API_URL+`/users/` + user.id, user);
+        return this.http.put(`${environment.apiUrl}/users/` + user.id, user);
     }
 
     delete(id: number) {
-        return this.http.delete(this.API_URL+`/users/` + id);
+        return this.http.delete(`${environment.apiUrl}/users/` + id);
     }
 }

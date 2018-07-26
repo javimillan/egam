@@ -9,7 +9,6 @@ import { RegisterComponent } from './register';
 import { AuthGuard } from './_guards';
 export const AppRoutes: Routes = [
   { path: '', component: HomeComponent, canActivate: [AuthGuard] },
-  { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: '**', redirectTo: '' },

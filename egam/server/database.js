@@ -6,3 +6,9 @@ mongoose.connect(URI)
     .catch(err => console.error(err));
 
 module.exports = mongoose;
+
+
+mongoose.Promise = global.Promise;
+module.exports = {
+    User: require('./users/user.model')
+};
