@@ -1015,3 +1015,7 @@ list inline
     }
 }
 .container{max-width: none;}
+@media (min-width: 576px){
+  .jumbotron{padding:4rem 30%;}
+
+}
