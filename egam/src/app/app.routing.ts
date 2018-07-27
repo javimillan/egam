@@ -8,16 +8,14 @@ import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 import { AuthGuard } from './_guards';
 export const AppRoutes: Routes = [
-  { path: '', component: HomeComponent, canActivate: [AuthGuard] },
+  // { path: '', component: StarterComponent, canActivate: [AuthGuard] },
+  { path: '', component: FullComponent, canActivate: [AuthGuard], children: [
+  { path: '', component: StarterComponent},
+  { path: 'starter', component: StarterComponent},
+  { path: 'paciente', component: PacienteComponent},
+]}
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: '**', redirectTo: '' },
-  { path: '', component: FullComponent, children: [
-    { path: 'paciente', component: PacienteComponent},
-    { path: 'starter', component: StarterComponent},
-      // { path: '', redirectTo: '/starter', pathMatch: 'full' },
-      // { path: 'paciente', component: PacienteComponent },
-      // { path: 'starter', component: StarterComponent }
-]
-}];
+];
 export const routing = RouterModule.forRoot(AppRoutes);
