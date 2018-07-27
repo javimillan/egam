@@ -22,9 +22,10 @@ function authenticate(req, res, next) {
 function register(req, res, next) {
   console.log("FUNCION REGISTER");
     userService.create(req.body)
-        .then(() => res.json({}))
+        .then(() => res.json({status: 'nuevo usuario dado de alta en BBDD!'}))
         .catch(err => next(err));
 }
+
 
 function getById(req, res, next) {
     userService.getById(req.params.id)

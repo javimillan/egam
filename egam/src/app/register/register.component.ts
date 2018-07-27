@@ -42,12 +42,13 @@ export class RegisterComponent implements OnInit {
             .pipe(first())
             .subscribe(
                 data => {
-                  console.log("registro ok");
+                  //añadir SNACKBAR
                     this.alertService.success('Registration successful', true);
                     this.router.navigate(['/login']);
                 },
                 error => {
                   console.log("error en registro");
+                  //añadir SNACKBAR
                     this.alertService.error(error);
                     this.loading = false;
                 });

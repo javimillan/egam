@@ -13,7 +13,7 @@ export const AppRoutes: Routes = [
   { path: '', component: StarterComponent},
   { path: 'starter', component: StarterComponent},
   { path: 'paciente', component: PacienteComponent},
-]}
+]},
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: '**', redirectTo: '' },

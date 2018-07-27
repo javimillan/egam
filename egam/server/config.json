@@ -1,3 +1,4 @@
 ﻿{
+    "connectionString": "mongodb://localhost/gam",
     "secret": "dadada"
 }

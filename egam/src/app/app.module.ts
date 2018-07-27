@@ -38,7 +38,7 @@ import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 
-import { fakeBackendProvider } from './_helpers';
+// import { fakeBackendProvider } from './_helpers';
 
 
 @NgModule({
@@ -90,7 +90,7 @@ import { fakeBackendProvider } from './_helpers';
     AlertService,
     AuthenticationService,
     UserService,
-    fakeBackendProvider,
+    // fakeBackendProvider,
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
   {

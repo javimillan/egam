@@ -6,8 +6,6 @@ import { environment } from '../../environments/environment';
 
 @Injectable()
 export class AuthenticationService {
-  private readonly API_URL = 'http://localhost:3000/api';
-
     constructor(private http: HttpClient) { }
 
     login(username: string, password: string) {

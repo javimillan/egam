@@ -18,9 +18,7 @@ pacienteCtrl.createPaciente = async (req, res, next) => {
         Direccion: req.body.Direccion
 
     });
-    // console.log(req);
-    // console.log(res);
-    // console.log(next);
+
     await paciente.save();
     res.json({status: 'paciente created'});
 };

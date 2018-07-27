@@ -6,8 +6,6 @@ import { User } from '../_models';
 
 @Injectable()
 export class UserService {
-  private readonly API_URL = 'http://localhost:3000/api';
-
     constructor(private http: HttpClient) { }
 
     getAll() {

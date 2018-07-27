@@ -46,7 +46,9 @@ async function create(userParam) {
         user.hash = bcrypt.hashSync(userParam.password, 10);
     }
     //grabamos usuario nuevo en BBDD
-    console.log("grabamos usuario nuevo en BBDD");
+    console.log("grabamos usuario nuevo en BBDD: ");
+    console.log(userParam);
+    console.log(user);
     // save user
     await user.save();
 }
