@@ -75,7 +75,7 @@ export class PacienteComponent implements OnInit {
     this.id = IdPaciente;
     // index row is used just for debugging proposes and can be removed
     this.index = i;
-    console.log(this.index);
+    // console.log(this.index);
     const dialogRef = this.dialog.open(EditDialogComponent, {
       data: {IdPaciente: IdPaciente, Nombre: Nombre, Apellido1: Apellido1, Apellido2: Apellido2, IdSiglaDireccion: IdSiglaDireccion, Direccion: Direccion}
     });
@@ -101,7 +101,7 @@ export class PacienteComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result === 1) {
-        console.log("elininar registro!");
+        // console.log("elininar registro!");
         const foundIndex = this.exampleDatabase.dataChange.value.findIndex(x => x.IdPaciente === this.id);
         // for delete we use splice in order to remove single object from DataService
         this.exampleDatabase.dataChange.value.splice(foundIndex, 1);
@@ -183,10 +183,10 @@ export class ExampleDataSource extends DataSource<Issue> {
     return Observable.merge(...displayDataChanges).map(() => {
       // Filter data
       this.filteredData = this._exampleDatabase.data.slice().filter((issue: Issue) => {
-      console.log("ISSUE " + issue.Nombre);
+      // console.log("ISSUE " + issue.Nombre);
       //montamos las filas con los campos deseados
         const searchStr = (issue.IdPaciente + issue.Nombre + issue.Apellido1 + issue.Apellido2 + issue.Direccion).toLowerCase();
-        console.log("EXAMPLE " + searchStr);
+        // console.log("EXAMPLE " + searchStr);
         //imprimimos filas
         return searchStr.indexOf(this.filter.toLowerCase()) !== -1;
       });
